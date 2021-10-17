@@ -1,0 +1,83 @@
+{
+	// Place your snippets for sass here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	"xs media query": {
+		"prefix": "@xs",
+		"body": [
+			"@media (max-width: --var(--sm))",
+			"\t"
+		],
+	},
+	"sm media query": {
+		"prefix": "@sm",
+		"body": [
+			"@media (min-width: --var(--sm))",
+			"\t"
+		],
+	},
+	"md media query": {
+		"prefix": "@md",
+		"body": [
+			"@media (min-width: --var(--md))",
+			"\t"
+		],
+	},
+	"lg media query": {
+		"prefix": "@lg",
+		"body": [
+			"@media (min-width: --var(--lg))",
+			"\t"
+		],
+	},
+	"xl media query": {
+		"prefix": "@xl",
+		"body": [
+			"@media (min-width: --var(--xl))",
+			"\t"
+		],
+	},
+	"xxl media query": {
+		"prefix": "@xxl",
+		"body": [
+			"@media (min-width: --var(--xxl))",
+			"\t"
+		],
+	},
+	"@media min-width": {
+		"prefix": "@min",
+		"body": [
+			"@media (min-width: $1)",
+			"\t"
+		]
+	},
+	"@media max-width": {
+		"prefix": "@min",
+		"body": [
+			"@media (max-width: $1)",
+			"\t"
+		]
+	},
+	"@media min-width and max-width": {
+		"prefix": "@mm",
+		"body": [
+			"@media (min-width: $1) and (max-width: $2)",
+			"\t"
+		]
+	},
+	"@font-face snip": {
+		"prefix": "@ff",
+		"body": [
+			"@font-face {",
+			"font-family: '$1';",
+			"src: url('../fonts/$1-$2.woff2') format('woff2'),",
+				"url('../fonts/$1-$2.woff') format('woff');",
+			"font-weight: $3;",
+			"font-style: normal;",
+			"font-display: swap;",
+			"}"
+		]
+	}
+}
